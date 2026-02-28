@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki Search App</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="main-container container">
+
+        <!-- Hero Header Section -->
+        <div class="wiki-search-header text-center">
+
+            <img class="wiki-logo img-fluid"
+                src="https://d2clawv67efefq.cloudfront.net/ccbp-dynamic-webapps/wiki-logo-img.png"
+                alt="Wikipedia Logo" />
+
+            <h2 class="mt-3 mb-4 font-weight-bold">
+                Wikipedia Search
+            </h2>
+
+            <!-- Search Bar -->
+            <div class="search-box position-relative mx-auto">
+                <input
+                    type="search"
+                    id="searchInput"
+                    class="form-control search-input"
+                    placeholder="Type a keyword and press Enter..."
+                />
+            </div>
+
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="spinner" class="text-center mt-4 d-none">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <p class="mt-2 text-muted">Fetching results...</p>
+        </div>
+
+        <!-- Search Results -->
+        <div class="search-results mt-4" id="searchResults"></div>
+
+    </div>
+
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+
+</body>
+</html>

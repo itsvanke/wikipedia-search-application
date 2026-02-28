@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f6f9;
+}
+
+.main-container {
+  font-family: "Roboto", sans-serif;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Header Section */
+.wiki-search-header {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.wiki-logo {
+  width: 160px;
+  margin-bottom: 25px;
+}
+
+/* Search Input */
+.search-input {
+  width: 100%;
+  font-size: 18px;
+  padding: 14px 18px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+}
+
+/* Results Section */
+.search-results {
+  width: 100%;
+}
+
+/* Result Card */
+.result-item {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.result-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.result-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+/* URL */
+.result-url {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.result-url:hover {
+  text-decoration: underline;
+}
+
+/* Description */
+.link-description {
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-item {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+.result-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.result-item a {
+  text-decoration: none;
+  color: #1a73e8;
+}
+
+.result-url {
+  display: block;
+  font-size: 14px;
+  color: #0f9d58;
+  margin-bottom: 8px;
+}
