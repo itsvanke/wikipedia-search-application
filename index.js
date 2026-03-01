@@ -2,9 +2,7 @@ const searchInputEl = document.getElementById("searchInput");
 const searchResultsEl = document.getElementById("searchResults");
 const spinnerEl = document.getElementById("spinner");
 
-/* --------------------------
-   Debounce Utility
---------------------------- */
+
 function debounce(func, delay) {
   let timer;
   return function (...args) {
@@ -13,9 +11,7 @@ function debounce(func, delay) {
   };
 }
 
-/* --------------------------
-   Create Result Card
---------------------------- */
+
 function createAndAppendSearchResult(result) {
   const { link, title, description } = result;
 
@@ -37,9 +33,7 @@ function createAndAppendSearchResult(result) {
   searchResultsEl.appendChild(resultItemEl);
 }
 
-/* --------------------------
-   Display Results
---------------------------- */
+
 function displayResults(results) {
   spinnerEl.classList.add("d-none");
   searchResultsEl.innerHTML = "";
@@ -56,9 +50,7 @@ function displayResults(results) {
   results.forEach(createAndAppendSearchResult);
 }
 
-/* --------------------------
-   Fetch Data
---------------------------- */
+
 async function fetchResults(query) {
   if (!query) return;
 
@@ -84,9 +76,7 @@ async function fetchResults(query) {
   }
 }
 
-/* --------------------------
-   Event Listener (Debounced)
---------------------------- */
+
 const debouncedSearch = debounce((event) => {
   const value = event.target.value.trim();
   fetchResults(value);
