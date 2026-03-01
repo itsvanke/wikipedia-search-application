@@ -17,7 +17,6 @@ body {
   padding: 40px 20px;
 }
 
-/* Header Section */
 .wiki-search-header {
   background: #ffffff;
   border-radius: 12px;
@@ -31,8 +30,6 @@ body {
   width: 160px;
   margin-bottom: 25px;
 }
-
-/* Search Input */
 .search-input {
   width: 100%;
   font-size: 18px;
@@ -48,12 +45,10 @@ body {
   box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
 }
 
-/* Results Section */
 .search-results {
   width: 100%;
 }
 
-/* Result Card */
 .result-item {
   background: #ffffff;
   padding: 25px;
@@ -68,7 +63,6 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* Title */
 .result-title {
   font-size: 22px;
   font-weight: 500;
@@ -76,7 +70,6 @@ body {
   margin-bottom: 8px;
 }
 
-/* URL */
 .result-url {
   display: inline-block;
   margin-bottom: 10px;
@@ -89,7 +82,7 @@ body {
   text-decoration: underline;
 }
 
-/* Description */
+
 .link-description {
   color: #4b5563;
   font-size: 15px;
